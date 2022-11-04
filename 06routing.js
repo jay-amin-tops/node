@@ -21,6 +21,10 @@ http.createServer(function (req, res) {
             update(req, res);
             break;
         default:
+            res.writeHead(404,{
+                "Content-type":"text/hmtl",
+                "my-own-header":"hello-jay"
+            })
             homepage(req,res);
             break;
     }
