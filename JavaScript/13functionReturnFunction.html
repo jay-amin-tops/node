@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function function1(func1) {
+
+            console.log(func1);
+            // function2(a)
+            return function function2(a) {
+                a = "something else"
+                return a;
+            }
+        }
+        let a= "Something from outer function"
+        console.log(function1(a)(a));
+        // var funcres = function1()
+        // console.log(funcres());
+    </script>
+</body>
+</html>

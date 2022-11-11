@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form action="">
+    <input type="text" class="my-inp" name="" id="">
+</form>
+<body>
+    <script>
+        class MathOp{
+            additow(a,b){
+                return a+b;
+            }
+            subtow(a,b){
+                return a-b;
+            }
+        }
+        class AdvMathOp extends MathOp{
+            avgtow(a,b){
+                TotalInp = document.getElementsByClassName('my-inp')
+                var legthtext = TotalInp.legth();
+                var inp = `<input type="text" onchange="test()" name="" id="inp${TotalInp}">`
+                sum = this.additow()
+                return sum/2;
+            }
+        }
+        function test(params) {
+            
+        }
+        var Ob = new  AdvMathOp;
+         console.log(Ob.additow(50,50));
+    </script>
+</body>
+</html>

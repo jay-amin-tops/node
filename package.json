@@ -1,0 +1,25 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node examples",
+  "main": "app.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay-amin-tops/node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Jay Amin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jay-amin-tops/node/issues"
+  },
+  "homepage": "https://github.com/jay-amin-tops/node#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            filter: hue-rotate();
+        }
+    </style>
+</head>
+<body>
+    <p>class is a collection of datamembers and member functions only</p>
+    <p>we can not access the property of class without creating an object with the help of new keyword we can create an object</p>
+    <script>
+        class MathOpYadNaiRakhvu{
+            Addition(a,b) {
+                return a+b            
+            }
+        }
+        class AdvanceMath extends MathOpYadNaiRakhvu{
+            Average(x,z) {
+                // console.log(x+z);
+                let AdditionRes =this.Addition(x,z);
+                return AdditionRes/2;
+                console.log();
+            }
+        }
+
+
+        // Addition(20,50) //01Class.html:19 Uncaught ReferenceError: Addition is not defined
+        let ObMath = new AdvanceMath
+        // console.log(ObMath);
+        // MathOp.Addition(60,50)
+        let AdditionResponse = ObMath.Addition(80,90)
+        console.log(AdditionResponse);
+        let AverageResponse = ObMath.Average(80,90)
+         console.log(AverageResponse);
+        // Addition(44,55)
+        // Addition(88,88)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Vehicle {
+            constructor(name, maker, engine) {
+                // console.log("testing");
+                this.name = name;
+                this.maker = maker;
+                this.engine = engine;
+            }
+            getBikeDetails() {
+                return (`The name of the bike is ${this.name} Maker ${this.maker}.`)
+            }
+        }
+        // let bike1 = new Vehicle();
+        // Making object with the help of the constructor
+        let bike1 = new Vehicle('Hayabusa', 'Suzuki', '1340cc');
+        console.log(bike1.getBikeDetails()); 
+        
+        let bike2 = new Vehicle('Ninja', 'Kawasaki', '998cc');
+        console.log(bike2.getBikeDetails()); 
+        </script>
+</body>
+
+</html>
