@@ -5,7 +5,6 @@ const Student = require("../model/Studentmodel")
 const bcrypt = require("bcryptjs")
 const auth = require("../middleware/auth")
 
-
 route.get("/", (req, resp) => {
     resp.render("login");
 })
@@ -28,7 +27,6 @@ route.post("/addStudent", async (req, resp) => {
     } catch (error) {
         resp.render("index")
     }
-
 })
 
 route.get("/view", auth, async (req, resp) => {
@@ -69,7 +67,6 @@ route.post("/login", async (req, resp) => {
         else {
             resp.render("login", { err: "Invalid username or password" })
         }
-
 
     } catch (error) {
         resp.render("login", { err: "Invalid username or password" })

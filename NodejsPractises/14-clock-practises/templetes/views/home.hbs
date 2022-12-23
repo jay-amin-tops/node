@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #2d2d2d;
+        }
+
+        #timedate {
+            font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+            text-align: left;
+            width: 50%;
+            margin: 40px auto;
+            color: #fff;
+            border-left: 3px solid #ed1f24;
+            padding: 20px;
+        }
+
+        #timeZone {
+
+            font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+            width: 50%;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 6px 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    </style>
+    <script src="js/myData.js"></script>
+
+</head>
+
+<body onLoad="allTimeZone()">
+
+    <div id="timedate">
+        <select id="timeZone" onchange="getTime(value)">
+            <option>----Select TimeZome----</option>
+        </select><br>
+        <a id="UTC">UTC</a><br>
+        <a id="date">YYYY-MM-DD</a><br>
+        <a id="time">00-00-00</a>
+    </div>
+</body>
+
+</html>
